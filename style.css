@@ -1,0 +1,76 @@
+/* Style the <ul> element */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+}
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+}
+form {
+  margin-top: 30px;
+}
+label {
+  color: #333;
+  font-size: 18px;
+  margin-right: 10px;
+}
+input {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+#submit {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  outline: none;
+  margin-left: 10px;
+}
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+#messages {
+  list-style: none;
+  padding: 0;
+  margin-top: 20;
+}
+/* Style each <li> element */
+#messages li {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  height: 1.2em;
+  overflow: hidden;
+}
+/* Style the copy button */
+.copy-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0.7;
+}
+/* Style the copy button on hover */
+.copy-btn:hover {
+  opacity: 1;
+}
