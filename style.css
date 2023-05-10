@@ -3,42 +3,43 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f2f2f2;
 }
-h1 {
-  color: #333;
-  text-align: center;
-  margin-top: 50px;
-}
 form {
-  margin-top: 30px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 label {
   color: #333;
   font-size: 18px;
   margin-right: 10px;
 }
-input {
-  border-radius: 5px;
-  border: none;
-  padding: 10px;
-  font-size: 16px;
-  width: 250px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  outline: none;
+#message {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 1.8em;
+    overflow: hidden;
+    resize: none;
 }
+
 #submit {
   background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.2s ease;
   outline: none;
-  margin-left: 10px;
+  margin-bottom: 2px;
+  height: 1.4em;
 }
 button[type="submit"]:hover {
-  background-color: #3e8e41;
+  background-color: grey;
 }
 #messages {
   list-style: none;
@@ -61,8 +62,8 @@ button[type="submit"]:hover {
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
-  background-color: #4caf50;
-  color: white;
+  background-color: white;
+  color: grey;
   border: none;
   border-radius: 5px;
   padding: 5px 10px;
