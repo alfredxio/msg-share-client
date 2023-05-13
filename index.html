@@ -2,18 +2,109 @@
 <html>
 <head>
   <title>Message App</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+    }
+    form {
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .msl {
+      color: #333;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+    .mslb {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+        height: 1.8em;
+        overflow: hidden;
+        resize: none;
+    }
+
+    .sbz {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.2s ease;
+      outline: none;
+      margin-bottom: 2px;
+      height: 1.4em;
+    }
+    .sbz:hover {
+      background-color: grey;
+    }
+    #messages {
+      list-style: none;
+      padding: 0;
+      margin-top: 20;
+    }
+    /* Style each <li> element */
+    #messages li {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+      position: relative;
+      height: 1.2em;
+      overflow: hidden;
+    }
+    /* Style the copy button */
+    .copy-btnz{
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      background-color: white;
+      color: grey;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+    .reload-btnz{
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: white;
+      color: grey;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+    /* Style the copy button on hover */
+    .copy-btnz:hover {
+      opacity: 1;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  
+  <button class="reload-btnz"><i class="fa fa-refresh"></i></button>
   <form>
-    <label for="message">Message:</label>
-    <textarea type="text" id="message" name="message"></textarea>
-    <button type="submit" id="submit">Submit</button>
+    <label for="message" class="msl">Message:</label>
+    <textarea type="text" id="message"  class="mslb" name="message"></textarea>
+    <button type="submit" id="submit" class="sbz">Submit</button>
   </form>
   <ul id="messages"></ul>
-  
   <script src="lib/jquery-3.6.0.min.js"></script>
-  <script src="app.js"></script>
+  <script src="appx.js"></script>
 </body>
 </html>
